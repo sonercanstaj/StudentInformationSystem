@@ -29,6 +29,14 @@ namespace StudentInformationSystem.Model
 
         public DbSet<ACADEMİC_SCHEDULE> ACADEMİC_SCHEDULES { get; set; }
 
+        public DbSet<MORTAR> MORTARS { get; set; }
+
+        public DbSet<STUDENT_LESSSONS> STUDENT_LESSSONS { get; set; }
+
+        public DbSet<ACADEMİC_PERSONAL> ACADEMİC_PERSONALS { get; set; }
+
+        public DbSet<ACADEMİCPER_SECTİON> ACADEMİCPER_SECTİONS { get; set; }
+
         public Context(string con) : base(con)
         {
 

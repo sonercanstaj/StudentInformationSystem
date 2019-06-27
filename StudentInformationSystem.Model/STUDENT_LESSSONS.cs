@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    class STUDENT_LESSSONS
+   public class STUDENT_LESSSONS
     {
         [key]
         public LESSON LESSON {get; set; }

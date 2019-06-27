@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    class ACADEMİCPER_SECTİON {
+   public class ACADEMİCPER_SECTİON {
         
         public SECTION SECTION { get; set; }
         public ACADEMİC_PERSONAL GetACADEMİC_PERSONAL { get; set; }

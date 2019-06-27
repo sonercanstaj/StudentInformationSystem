@@ -10,7 +10,7 @@ namespace StudentInformationSystem.Model
     {
         public Int32 Id { get; set; }
 
-        //public SECTION_PRESIDENT SECTION_PRESIDENT { get; set; }
+        public int SECTION_PRESIDENT  { get; set; }
 
         public string NAME { get; set; }
 

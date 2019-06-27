@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    class MORTAR
+    public class MORTAR
     {
+        [key]
         public STUDENT STUDENT { get; set; }
-        public ACADEMİC_SCHEDULE GetACADEMİC_SCHEDULE  {get; set; }
-        public String TOTAL { get; set; }
-        public DateTime PAY_DATE { get; set; }  
+
+        public ACADEMİC_SCHEDULE ACADEMİC_SCHEDULE { get; set; }
+
+        public string TOTAL { get; set; }
+
+        public string PAY_DATE { get; set; }
     }
 }
