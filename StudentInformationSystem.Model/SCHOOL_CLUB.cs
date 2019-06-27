@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    public class SECTION
+    public class SCHOOL_CLUB
     {
         public Int32 Id { get; set; }
 
-        //public SECTION_PRESIDENT SECTION_PRESIDENT { get; set; }
-
         public string NAME { get; set; }
-
-        public string MORTAL_TOTAL { get; set; }
+        
+        public string EXPERIENCE { get; set; }
     }
 }
