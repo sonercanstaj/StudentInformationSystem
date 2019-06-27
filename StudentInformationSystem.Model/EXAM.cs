@@ -19,7 +19,8 @@ namespace StudentInformationSystem.Model
         //public SECHEDULE SECHEDULE { get; set; }
 
         public AKADEMİCPERSONEL PERSONEL { get; set; }
-        public AKADEMİCPERSONEL PERSONELl { get; set; }
+        
+
 
 
     }
