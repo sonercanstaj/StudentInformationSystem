@@ -27,6 +27,8 @@ namespace StudentInformationSystem.Model
 
         public DbSet<IDENTITY_INFORMATIONS> IDENTITY_INFORMATIONS { get; set; }
 
+        public DbSet<ACADEMİC_SCHEDULE> ACADEMİC_SCHEDULES { get; set; }
+
         public Context(string con) : base(con)
         {
 
