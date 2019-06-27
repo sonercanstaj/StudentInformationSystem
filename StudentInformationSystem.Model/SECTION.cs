@@ -8,5 +8,6 @@ namespace StudentInformationSystem.Model
 {
     class SECTION
     {
+        public int MyProperty { get; set; }
     }
 }
