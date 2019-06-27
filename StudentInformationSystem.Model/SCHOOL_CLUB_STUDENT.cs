@@ -9,6 +9,6 @@ namespace StudentInformationSystem.Model
     class SCHOOL_CLUB_STUDENT { 
 
 
-        int a = 4;
+      
     }
 }
