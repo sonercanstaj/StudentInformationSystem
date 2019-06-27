@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    public class AKADEMİCPERSONEL
+    public class ACADEMİC_PERSONAL
     {
-        public Int32 Id { get; set; }
+        [key]
+        public Int32 PERSONEL_ID { get; set; }
 
         public string PASSWORS { get; set; }
 

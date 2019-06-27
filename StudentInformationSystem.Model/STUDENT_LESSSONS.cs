@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    public class EXAM_RESULT
+    class STUDENT_LESSSONS
     {
         [key]
-        public Int32 Id { get; set; }
-        public EXAM EXAM { get; set; }
-
+        public LESSON LESSON {get; set; }
         public STUDENT STUDENT { get; set; }
+        public ACADEMİC_SCHEDULE ACADEMİC_SCHEDULE { get; set; }
+        public string ISPASSED { get; set; }
 
-        public string NOTE { get; set; }
     }
 }

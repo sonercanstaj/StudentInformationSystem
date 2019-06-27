@@ -27,13 +27,14 @@ namespace StudentInformationSystem
                     //STUDENT sTUDENT2 = new STUDENT();
                     //sTUDENT2.NAME = "Soner";
                     //con.STUDENTS.Add(sTUDENT2);
-                    //con.SaveChanges();
+                    //
+                  con.SaveChanges();
 
                 }
             }
             catch(Exception ex)
             {
-
+                MessageBox.Show(ex.Message.ToString());
             }
                 Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
