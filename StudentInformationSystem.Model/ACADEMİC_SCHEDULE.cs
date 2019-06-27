@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    class ACADEMİC_SCHEDULE
+    public class ACADEMİC_SCHEDULE
     { 
         [key]
         public int ID { get; set; }
