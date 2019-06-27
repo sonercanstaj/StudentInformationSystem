@@ -9,6 +9,7 @@ namespace StudentInformationSystem.Model
     public class SCHOOL_CLUB_STUDENT
     {
         [key]
+        public Int32 Id { get; set; }
         public STUDENT STUDENT { get; set; }
 
         public SCHOOL_CLUB SCHOOL_CLUB { get; set; }
