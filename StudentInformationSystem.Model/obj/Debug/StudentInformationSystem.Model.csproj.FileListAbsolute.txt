@@ -10,3 +10,15 @@ C:\Users\Emfa\Documents\GitHub\StudentInformationSystem\StudentInformationSystem
 C:\Users\Emfa\Documents\GitHub\StudentInformationSystem\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.csproj.CopyComplete
 C:\Users\Emfa\Documents\GitHub\StudentInformationSystem\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.dll
 C:\Users\Emfa\Documents\GitHub\StudentInformationSystem\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.pdb
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\StudentInformationSystem.Model.dll.config
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\StudentInformationSystem.Model.dll
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\StudentInformationSystem.Model.pdb
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\EntityFramework.dll
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\EntityFramework.xml
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.csprojAssemblyReference.cache
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.csproj.CoreCompileInputs.cache
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.csproj.CopyComplete
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.dll
+C:\Users\Emfa\source\repos\sonercanstaj\StudentInformationSystem.Model\obj\Debug\StudentInformationSystem.Model.pdb

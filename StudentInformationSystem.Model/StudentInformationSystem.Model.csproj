@@ -55,6 +55,8 @@
     <Compile Include="keyAttribute.cs" />
     <Compile Include="LESSON.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCHOOL_CLUB_STUDENT.cs" />
+    <Compile Include="SECTION.cs" />
     <Compile Include="STUDENT.cs" />
   </ItemGroup>
   <ItemGroup>
