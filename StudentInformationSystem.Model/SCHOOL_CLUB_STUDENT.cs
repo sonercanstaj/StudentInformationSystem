@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace StudentInformationSystem.Model
 {
-    class SCHOOL_CLUB_STUDENT
-    {
+    class SCHOOL_CLUB_STUDENT { 
+
+
+        int a = 4;
     }
 }
