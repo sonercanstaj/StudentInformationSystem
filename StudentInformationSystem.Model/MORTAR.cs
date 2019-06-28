@@ -9,6 +9,8 @@ namespace StudentInformationSystem.Model
     public class MORTAR
     {
         [key]
+        public Int32 Id { get; set; }
+        
         public STUDENT STUDENT { get; set; }
 
         public ACADEMİC_SCHEDULE ACADEMİC_SCHEDULE { get; set; }

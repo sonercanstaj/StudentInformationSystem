@@ -9,7 +9,7 @@ namespace StudentInformationSystem.Model
     public class ACADEMİC_PERSONAL
     {
         [key]
-        public Int32 PERSONEL_ID { get; set; }
+        public Int32 Id { get; set; }
 
         public string PASSWORS { get; set; }
 

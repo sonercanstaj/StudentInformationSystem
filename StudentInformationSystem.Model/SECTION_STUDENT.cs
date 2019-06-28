@@ -8,6 +8,8 @@ namespace StudentInformationSystem.Model
 {
     public class SECTION_STUDENT
     {
+        
+        public Int32 Id { get; set; }
         [key]  
         public SECTION SECTION { get; set; }
 

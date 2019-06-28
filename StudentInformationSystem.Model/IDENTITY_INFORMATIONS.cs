@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 namespace StudentInformationSystem.Model
 {
     public class IDENTITY_INFORMATIONS
-    {
+    { 
+        [key]
+        public Int32 Id { get; set; }
+
         public STUDENT STUDENT { get; set; }
 
         public string IDENTITY { get; set; }
