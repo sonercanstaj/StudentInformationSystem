@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OGRENCİ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OGRENCİ.Designer.cs">
+      <DependentUpon>OGRENCİ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestForm.cs">
@@ -62,6 +68,9 @@
     <Compile Include="TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="OGRENCİ.resx">
+      <DependentUpon>OGRENCİ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -94,6 +103,18 @@
       <Project>{36ad9da9-3e2d-4f4c-ae7d-3889dd862041}</Project>
       <Name>StudentInformationSystem.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-mini1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ankara-Üniversitesi-300x150-300x150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ankara-Üniversitesi-300x150-300x1501.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

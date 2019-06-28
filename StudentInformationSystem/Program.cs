@@ -21,14 +21,14 @@ namespace StudentInformationSystem
                 {
                     if (!con.Database.Exists())
                         con.Database.Create();
-                    //STUDENT sTUDENT= con.STUDENTS.Where(x => x.Id == 102030).FirstOrDefault();
-                    //sTUDENT.NAME = "Adem";
-                    //con.SaveChanges();
-                    //STUDENT sTUDENT2 = new STUDENT();
-                    //sTUDENT2.NAME = "Soner";
-                    //con.STUDENTS.Add(sTUDENT2);
-                    //
-                  con.SaveChanges();
+                    ////STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
+                    ////sTUDENT.NAME = "can";
+                    ////sTUDENT.SURNAME = "Soner";
+                    ////sTUDENT.PASSWORD = "";
+                    
+                    ////con.STUDENTS.Add(sTUDENT);
+
+                    ////con.SaveChanges();
 
                 }
             }
@@ -38,7 +38,7 @@ namespace StudentInformationSystem
             }
                 Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TestForm());
+            Application.Run(new GİRİS_FORM());
         }
     }
 }

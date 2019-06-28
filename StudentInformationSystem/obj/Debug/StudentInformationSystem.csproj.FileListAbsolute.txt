@@ -46,9 +46,10 @@ C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\bin
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csprojAssemblyReference.cache
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.Properties.Resources.resources
-C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.TestForm.resources
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.GenerateResource.cache
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CoreCompileInputs.cache
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CopyComplete
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
+C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.GİRİS_FORM.resources
+C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.OGRENCİ.resources
