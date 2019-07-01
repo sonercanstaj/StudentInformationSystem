@@ -10,18 +10,18 @@ using System.Windows.Forms;
 using StudentInformationSystem.Model;
 
 
+
 namespace StudentInformationSystem
 {
-    public partial class OGRENCİ : Form
+    public partial class ACADEMİC_PERSONEL_FORM : Form
     {
-        public OGRENCİ()
+        public ACADEMİC_PERSONEL_FORM()
         {
             InitializeComponent();
         }
-
-
         private void GİRİS_BTN_Click(object sender, EventArgs e)
         {
+
             if (Kullanici_Adi_Txt != null && PASSWORD_TXT != null)
             {
                 try
@@ -30,13 +30,13 @@ namespace StudentInformationSystem
                     {
                         int id = Convert.ToInt32(Kullanici_Adi_Txt.Text);
                         string password = PASSWORD_TXT.Text;
-                        STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id && x.PASSWORD == password).FirstOrDefault();
+                        ACADEMİC_PERSONAL QUERY = con.ACADEMİC_PERSONALS.Where(x => x.Id == id && x.PASSWORS == password).FirstOrDefault();
                         if (QUERY == null)
                             MessageBox.Show("Lütfen kullanıcı adını veya şifrenizi kontrol ediniz !");
                         else
                         {
-                            STUDENTS_SCREEN screen = new STUDENTS_SCREEN();
-                            screen.Show();
+                            ACADEMİC_PERSONEL_SCREEN SCREEN = new ACADEMİC_PERSONEL_SCREEN();
+                            SCREEN.Show();
                             this.Hide();
                         }
                     }
@@ -51,8 +51,7 @@ namespace StudentInformationSystem
                 MessageBox.Show("Lütfen kullanıcı adınızı boş girmeyiniz girip tekrar deneyiniz!");
             }
         }
-
-        private void OGRENCİ_Load(object sender, EventArgs e)
+        private void ACADEMİC_PERSONEL_FORM_Load(object sender, EventArgs e)
         {
 
             if (checkBox1.Checked)
@@ -65,4 +64,5 @@ namespace StudentInformationSystem
             }
         }
     }
-}
+    }
+

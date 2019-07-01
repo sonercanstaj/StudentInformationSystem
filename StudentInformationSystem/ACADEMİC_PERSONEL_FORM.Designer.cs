@@ -1,6 +1,6 @@
 ﻿namespace StudentInformationSystem
 {
-    partial class OGRENCİ
+    partial class ACADEMİC_PERSONEL_FORM
     {
         /// <summary>
         /// Required designer variable.
@@ -50,9 +50,9 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(529, 264);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "AÜ_OBS";
+            this.groupBox1.Text = "AÜ_ABS";
             // 
             // groupBox3
             // 
@@ -138,21 +138,21 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(13, 241);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(263, 17);
+            this.label3.Size = new System.Drawing.Size(334, 17);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Ankara Üniversitesi Öğrenci Bilgi Sistemi";
+            this.label3.Text = "Ankara Üniversitesi Akademik Personel Bilgi Sistemi";
             // 
-            // OGRENCİ
+            // ACADEMİC_PERSONEL_FORM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(552, 287);
+            this.ClientSize = new System.Drawing.Size(554, 290);
             this.Controls.Add(this.groupBox1);
-            this.Name = "OGRENCİ";
+            this.Name = "ACADEMİC_PERSONEL_FORM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ÖĞRENCİ EKRANI";
-            this.Load += new System.EventHandler(this.OGRENCİ_Load);
+            this.Text = "Akademik Personel Giriş Ekranı";
+            this.Load += new System.EventHandler(this.ACADEMİC_PERSONEL_FORM_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

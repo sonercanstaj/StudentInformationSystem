@@ -53,3 +53,5 @@ C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.GİRİS_FORM.resources
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.OGRENCİ.resources
+C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ACADEMİC_PERSONEL_FORM.resources
+C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.STUDENTS_SCREEN.resources
