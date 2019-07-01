@@ -107,6 +107,9 @@
     <EmbeddedResource Include="ACADEMİC_PERSONEL_FORM.resx">
       <DependentUpon>ACADEMİC_PERSONEL_FORM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ACADEMİC_PERSONEL_SCREEN.resx">
+      <DependentUpon>ACADEMİC_PERSONEL_SCREEN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OGRENCİ.resx">
       <DependentUpon>OGRENCİ.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,7 +150,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo-mini.png" />
+    <None Include="logo-mini.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo-mini1.png" />
