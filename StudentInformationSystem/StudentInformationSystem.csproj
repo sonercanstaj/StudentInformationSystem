@@ -54,6 +54,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACADEMIC_SCHEDULE_SCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACADEMIC_SCHEDULE_SCREEN.Designer.cs">
+      <DependentUpon>ACADEMIC_SCHEDULE_SCREEN.cs</DependentUpon>
+    </Compile>
     <Compile Include="ACADEMİC_PERSONEL_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +72,23 @@
     <Compile Include="ACADEMİC_PERSONEL_SCREEN.Designer.cs">
       <DependentUpon>ACADEMİC_PERSONEL_SCREEN.cs</DependentUpon>
     </Compile>
+    <Compile Include="EXAM_RESULT_SCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EXAM_RESULT_SCREEN.Designer.cs">
+      <DependentUpon>EXAM_RESULT_SCREEN.cs</DependentUpon>
+    </Compile>
     <Compile Include="IDENTTİTY_INFORMATİON_SCREEN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IDENTTİTY_INFORMATİON_SCREEN.Designer.cs">
       <DependentUpon>IDENTTİTY_INFORMATİON_SCREEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LESSON_SCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LESSON_SCREEN.Designer.cs">
+      <DependentUpon>LESSON_SCREEN.cs</DependentUpon>
     </Compile>
     <Compile Include="MORTAR_SCREEN.cs">
       <SubType>Form</SubType>
@@ -91,6 +109,12 @@
     </Compile>
     <Compile Include="SCHOOL_CLUB_SCREEN.Designer.cs">
       <DependentUpon>SCHOOL_CLUB_SCREEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECTION_SCREEN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECTION_SCREEN.Designer.cs">
+      <DependentUpon>SECTION_SCREEN.cs</DependentUpon>
     </Compile>
     <Compile Include="STUDENTS_SCREEN.cs">
       <SubType>Form</SubType>
