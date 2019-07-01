@@ -39,5 +39,29 @@ namespace StudentInformationSystem
             SCHOOL_CLUB_SCREEN AC = new SCHOOL_CLUB_SCREEN();
             AC.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ACADEMIC_SCHEDULE_SCREEN AS = new ACADEMIC_SCHEDULE_SCREEN();
+            AS.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SECTION_SCREEN SS = new SECTION_SCREEN();
+            SS.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            EXAM_RESULT_SCREEN ER = new EXAM_RESULT_SCREEN();
+            ER.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            LESSON_SCREEN LS = new LESSON_SCREEN();
+            LS.Show();
+        }
     }
 }
