@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentInformationSystem.Model;
 
 namespace StudentInformationSystem
 {
@@ -16,52 +17,37 @@ namespace StudentInformationSystem
         {
             InitializeComponent();
         }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            MORTAR_SCREEN A = new MORTAR_SCREEN();
-            A.Show();
-        }
-
         private void STUDENTS_SCREEN_Load(object sender, EventArgs e)
         {
+            int id = ADMINSTRATOR_SCREEN.id;
+   
+            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+            Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
+            lbName.Text = QUERY.NAME;
+            lbSurname.Text = QUERY.SURNAME;
+            Label_Start_Date.Text = QUERY.START_DATE;
 
         }
-
-        private void Button2_Click(object sender, EventArgs e)
+        private void Button8_Click(object sender, EventArgs e)
         {
-            IDENTTİTY_INFORMATİON_SCREEN A = new IDENTTİTY_INFORMATİON_SCREEN();
-            A.Show();
-        }
+            using (var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;"))
+            {
+                var id = 1;
+                var QUERY = con.STUDENTS.Where(t => t.Id == id ).FirstOrDefault();
+                var x = con.STUDENTS.ToList().Select(v => new {v.SURNAME});
+                List<STUDENT> list = new List<STUDENT>();
+                foreach (var item in x)
+                {
+                    STUDENT l = new STUDENT();
+                    l.NAME = item.SURNAME;
+                    //l.PASSWORD = item.PASSWORD;
+                   // l.START_DATE = item.START_DATE;
+                    list.Add(l);
+                   
 
-        private void Button3_Click(object sender, EventArgs e)
-        {
-            SCHOOL_CLUB_SCREEN AC = new SCHOOL_CLUB_SCREEN();
-            AC.Show();
-        }
+                }                 
+            }
+       }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ACADEMIC_SCHEDULE_SCREEN AS = new ACADEMIC_SCHEDULE_SCREEN();
-            AS.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            SECTION_SCREEN SS = new SECTION_SCREEN();
-            SS.Show();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            EXAM_RESULT_SCREEN ER = new EXAM_RESULT_SCREEN();
-            ER.Show();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            LESSON_SCREEN LS = new LESSON_SCREEN();
-            LS.Show();
-        }
     }
 }

@@ -59,45 +59,5 @@ namespace StudentInformationSystem.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ankara_Üniversitesi_300x150_300x150 {
-            get {
-                object obj = ResourceManager.GetObject("Ankara-Üniversitesi-300x150-300x150", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Ankara_Üniversitesi_300x150_300x1501 {
-            get {
-                object obj = ResourceManager.GetObject("Ankara-Üniversitesi-300x150-300x1501", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_mini {
-            get {
-                object obj = ResourceManager.GetObject("logo-mini", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_mini1 {
-            get {
-                object obj = ResourceManager.GetObject("logo-mini1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

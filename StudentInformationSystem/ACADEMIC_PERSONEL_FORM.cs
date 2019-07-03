@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StudentInformationSystem
 {
-    public partial class ACADEMIC_SCHEDULE_SCREEN : Form
+    public partial class ACADEMIC_PERSONEL_FORM : Form
     {
-        public ACADEMIC_SCHEDULE_SCREEN()
+        public ACADEMIC_PERSONEL_FORM()
         {
             InitializeComponent();
         }

@@ -54,67 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ACADEMIC_SCHEDULE_SCREEN.cs">
+    <Compile Include="ACADEMIC_PERSONEL_FORM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ACADEMIC_SCHEDULE_SCREEN.Designer.cs">
-      <DependentUpon>ACADEMIC_SCHEDULE_SCREEN.cs</DependentUpon>
+    <Compile Include="ACADEMIC_PERSONEL_FORM.Designer.cs">
+      <DependentUpon>ACADEMIC_PERSONEL_FORM.cs</DependentUpon>
     </Compile>
-    <Compile Include="ACADEMİC_PERSONEL_FORM.cs">
+    <Compile Include="ADMINSTRATOR_SCREEN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ACADEMİC_PERSONEL_FORM.Designer.cs">
-      <DependentUpon>ACADEMİC_PERSONEL_FORM.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ACADEMİC_PERSONEL_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ACADEMİC_PERSONEL_SCREEN.Designer.cs">
-      <DependentUpon>ACADEMİC_PERSONEL_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EXAM_RESULT_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EXAM_RESULT_SCREEN.Designer.cs">
-      <DependentUpon>EXAM_RESULT_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IDENTTİTY_INFORMATİON_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IDENTTİTY_INFORMATİON_SCREEN.Designer.cs">
-      <DependentUpon>IDENTTİTY_INFORMATİON_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LESSON_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LESSON_SCREEN.Designer.cs">
-      <DependentUpon>LESSON_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MORTAR_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MORTAR_SCREEN.Designer.cs">
-      <DependentUpon>MORTAR_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OGRENCİ.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="OGRENCİ.Designer.cs">
-      <DependentUpon>OGRENCİ.cs</DependentUpon>
+    <Compile Include="ADMINSTRATOR_SCREEN.Designer.cs">
+      <DependentUpon>ADMINSTRATOR_SCREEN.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SCHOOL_CLUB_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SCHOOL_CLUB_SCREEN.Designer.cs">
-      <DependentUpon>SCHOOL_CLUB_SCREEN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SECTION_SCREEN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SECTION_SCREEN.Designer.cs">
-      <DependentUpon>SECTION_SCREEN.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="STUDENTS_SCREEN.cs">
       <SubType>Form</SubType>
@@ -128,25 +85,17 @@
     <Compile Include="TestForm.Designer.cs">
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ACADEMİC_PERSONEL_FORM.resx">
-      <DependentUpon>ACADEMİC_PERSONEL_FORM.cs</DependentUpon>
+    <EmbeddedResource Include="ACADEMIC_PERSONEL_FORM.resx">
+      <DependentUpon>ACADEMIC_PERSONEL_FORM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ACADEMİC_PERSONEL_SCREEN.resx">
-      <DependentUpon>ACADEMİC_PERSONEL_SCREEN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OGRENCİ.resx">
-      <DependentUpon>OGRENCİ.cs</DependentUpon>
+    <EmbeddedResource Include="ADMINSTRATOR_SCREEN.resx">
+      <DependentUpon>ADMINSTRATOR_SCREEN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="STUDENTS_SCREEN.resx">
       <DependentUpon>STUDENTS_SCREEN.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,16 +123,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="logo-mini.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo-mini1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ankara-Üniversitesi-300x150-300x150.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Ankara-Üniversitesi-300x150-300x1501.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

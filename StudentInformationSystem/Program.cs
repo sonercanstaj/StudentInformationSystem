@@ -19,20 +19,22 @@ namespace StudentInformationSystem
             {
                 using (var con = new Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;"))
                 {
+                    //Eklemek
+                    //
                     if (!con.Database.Exists())
                         con.Database.Create();
-                    ////STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
-                    ////sTUDENT.NAME = "can";
-                    ////sTUDENT.SURNAME = "Soner";
-                    ////sTUDENT.PASSWORD = "";
-                    
-                    ////con.STUDENTS.Add(sTUDENT);
+                    ////    STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
+                    ////    sTUDENT.NAME = "can";
+                    ////    sTUDENT.SURNAME = "Soner";
+                    ////    sTUDENT.PASSWORD = "asdasd";
 
-                    ////con.SaveChanges();
+                    ////    con.STUDENTS.Add(sTUDENT);
+                    ////    con.SaveChanges();
+                    ////}
 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }

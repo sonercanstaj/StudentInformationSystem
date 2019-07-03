@@ -52,8 +52,6 @@ C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.GİRİS_FORM.resources
-C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.OGRENCİ.resources
-C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ACADEMİC_PERSONEL_FORM.resources
 C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.STUDENTS_SCREEN.resources
 C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformationSystem\bin\Debug\StudentInformationSystem.exe.config
 C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformationSystem\bin\Debug\StudentInformationSystem.exe
@@ -76,3 +74,5 @@ C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformat
 C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.csproj.CopyComplete
 C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.exe
 C:\Users\Emfa\Source\Repos\sonercanstaj\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.pdb
+C:\Users\Emfa\Source\Repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ADMINSTRATOR_SCREEN.resources
+C:\Users\Emfa\source\repos\StudentInformationSystem\StudentInformationSystem\obj\Debug\StudentInformationSystem.ACADEMIC_PERSONEL_FORM.resources
