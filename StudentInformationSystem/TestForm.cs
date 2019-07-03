@@ -22,62 +22,20 @@ namespace StudentInformationSystem
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //admin paneli
-            int id = Convert.ToInt32(textBox1.Text);
-                var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+            //////admin paneli
+            ////int id = Convert.ToInt32(textBox1.Text);
+            ////    var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+
+            ////// Model.STUDENT QUERY = con.STUDENTS.Where(s => s.Id == 1&& id>=1).FirstOrDefault();
+            ////var ogr_list = con.STUDENTS.ToList();
+            ////dataGridView1.DataSource = ogr_list;
+            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+            var cek = con.STUDENTS.Where(a => a.START_DATE == "02.03.2018").ToList();
+            dataGridView1.DataSource = cek;
             
-            Model.STUDENT QUERY = con.STUDENTS.FirstOrDefault();
-            
-
-
-
-
-
-
-
-
-
-
-
-            //label1.Text=QUERY.NAME;
-
-            //int idO = Convert.ToInt32(textBox1.Text);
-            //var caN = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-            //Model.MORTAR QUERYE = caN.MORTARS.Where(x => x.Id == idO).SingleOrDefault();
-            //label2.Text = QUERYE.TOTAL;
-
-
-
-
-
-
-
-
-
-
-
-
-
-            //      var id = 1;
-            //    using (var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;")) ;
-            //    { 
-            //    var QUERY = con.STUDENTS.Where(t => t.Id == id).FirstOrDefault();
-            //var x = con.STUDENTS.ToList().Select(v => new { v.SURNAME });
-            //List<STUDENT> list = new List<STUDENT>();
-            //        foreach (var item in x)
-            //        {
-            //            STUDENT l = new STUDENT();
-            //            l.NAME = item.SURNAME;
-            //            //l.PASSWORD = item.PASSWORD;
-            //            // l.START_DATE = item.START_DATE;
-            //            list.Add(l);
-            //        }
 
 
         }
-
-
-
 
         }
     }
