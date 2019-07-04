@@ -40,7 +40,7 @@ namespace StudentInformationSystem
             }
                 Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GİRİS_FORM());
+            Application.Run(new ADMINSTRATOR_SCREEN());
         }
     }
 }

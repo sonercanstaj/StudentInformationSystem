@@ -22,22 +22,33 @@ namespace StudentInformationSystem
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //////admin paneli
-            ////int id = Convert.ToInt32(textBox1.Text);
-            ////    var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+            //var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
 
-            ////// Model.STUDENT QUERY = con.STUDENTS.Where(s => s.Id == 1&& id>=1).FirstOrDefault();
-            ////var ogr_list = con.STUDENTS.ToList();
-            ////dataGridView1.DataSource = ogr_list;
-            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-            var cek = con.STUDENTS.Where(a => a.START_DATE == "02.03.2018").ToList();
-            dataGridView1.DataSource = cek;
+            //var first = con.STUDENTS.Where(t=> t.Id == 1).First();
+            //try
+            //{
+            //    var first1 = con.STUDENTS.Where(t => t.Id == 92).First();
+            //}
+            //catch { }
+            //var firstdefault = con.STUDENTS.Where(t=> t.Id == 1).FirstOrDefault();
+            //var firstdefault1 = con.STUDENTS.Where(t=> t.Id == 92).FirstOrDefault();
+            //var sing = con.STUDENTS.Where(t=> t.Id == 1).Single();
+            //try
+            //{
+            //    var sing1 = con.STUDENTS.Where(t => t.Id == 92).Single();
+            //}
+            //catch { }
+            //var singdefault = con.STUDENTS.Where(t=> t.Id == 1).SingleOrDefault();
+            //var singdefault1 = con.STUDENTS.Where(t=> t.Id == 92).SingleOrDefault();
+            //var find = con.STUDENTS.Find(1);
+            //var find1 = con.STUDENTS.Find(92);
             
-
-
-        }
+            //MessageBox.Show("dvgdf");
 
         }
+     
+
+    }
     }
    
     
