@@ -19,35 +19,65 @@ namespace StudentInformationSystem
         }
         private void STUDENTS_SCREEN_Load(object sender, EventArgs e)
         {
-            int id = ADMINSTRATOR_SCREEN.id;
-   
-            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-            Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
-            lbName.Text = QUERY.NAME;
-            lbSurname.Text = QUERY.SURNAME;
-            Label_Start_Date.Text = QUERY.START_DATE;
 
         }
-        private void Button8_Click(object sender, EventArgs e)
+        private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;"))
+            switch (TabControl1.SelectedIndex)
             {
-                var id = 1;
-                var QUERY = con.STUDENTS.Where(t => t.Id == id ).FirstOrDefault();
-                var x = con.STUDENTS.ToList().Select(v => new {v.SURNAME});
-                List<STUDENT> list = new List<STUDENT>();
-                foreach (var item in x)
-                {
-                    STUDENT l = new STUDENT();
-                    l.NAME = item.SURNAME;
-                    //l.PASSWORD = item.PASSWORD;
-                   // l.START_DATE = item.START_DATE;
-                    list.Add(l);
-                   
+                case 0://identity informations
+                    {
+                        int id = ADMINSTRATOR_SCREEN.id;
+                        var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
 
-                }                 
+                        Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
+                        lbName.Text = QUERY.NAME;
+                        lbSurname.Text = QUERY.SURNAME;
+                        Label_Start_Date.Text = QUERY.START_DATE;
+
+
+
+                    }
+                    break;
+                case 1://mortar
+                    {
+                        int id = ADMINSTRATOR_SCREEN.id;
+                        var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+                        MORTAR ac = con.MORTARS.Where(x => x.Id == id).SingleOrDefault();
+                        Lbl_Pay_Date.Text = ac.PAY_DATE;
+                        Lbl_total.Text = ac.TOTAL;
+                    }
+                    break;
+
+                case 2://school clubs
+                    {
+                        var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+                        var cek = con.SCHOOL_CLUB_STUDENTS.Select(x=> x.NAME).ToList();
+                        dataGridView1.DataSource = cek;
+                    }
+                    break;
+                case 3://academic schedule
+                    {
+                        MessageBox.Show("Test4");
+                    }
+                    break;
+                case 4://section
+                    {
+                        MessageBox.Show("Test4");
+                    }
+                    break;
+                case 5://exam result
+                    {
+                    MessageBox.Show("Test5");
+                    }
+                    break;
+                case 6://lessons
+                    {
+                        MessageBox.Show("Test6");
+                    }
+                    break;
             }
-       }
 
+        }
     }
 }
