@@ -96,5 +96,10 @@ namespace StudentInformationSystem
         {
             this.Close();
                 }
+
+        private void ADMINSTRATOR_SCREEN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }   
 }

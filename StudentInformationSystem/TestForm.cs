@@ -15,6 +15,7 @@ namespace StudentInformationSystem
 {
     public partial class GİRİS_FORM : Form
     {
+
         public GİRİS_FORM()
         {
             InitializeComponent();
@@ -37,7 +38,14 @@ namespace StudentInformationSystem
 
         }
 
+        private void GİRİS_FORM_Load(object sender, EventArgs e)
+        {
+            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
+            var soner = con.STUDENTS.Count();
+            MessageBox.Show(" ");
         }
+        
+    }
     }
    
     
