@@ -66,7 +66,7 @@ namespace StudentInformationSystem
                         {
                             id = Convert.ToInt32(Kullanici_Adi_Txt.Text);
                             password = PASSWORD_TXT.Text;
-                            ACADEMİC_PERSONAL QUERY = con.ACADEMİC_PERSONALS.Where(x => x.Id == id && x.PASSWORS == password).FirstOrDefault();
+                            ACADEMİC_PERSONAL QUERY = con.ACADEMİC_PERSONALS.Where(x => x.Id == id && x.PASSWORD == password).FirstOrDefault();
 
                             if (QUERY == null)
                                 MessageBox.Show("Lütfen kullanıcı adını veya şifrenizi kontrol ediniz !");

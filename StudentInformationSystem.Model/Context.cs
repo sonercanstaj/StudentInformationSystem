@@ -37,12 +37,12 @@ namespace StudentInformationSystem.Model
 
         public DbSet<ACADEMİCPER_SECTİON> ACADEMİCPER_SECTİONS { get; set; }
 
-        public Context(string con) : base(con)
+        public Context(string con) : base("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;")
         {
 
         }
 
-        public Context()
+        public Context():base("Server =.; Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;")
         {
 
         }

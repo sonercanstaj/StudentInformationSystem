@@ -18,5 +18,8 @@ namespace StudentInformationSystem.Model
         public string CREDİT { get; set; }
 
         public string CLASS { get; set; }
+
+
+        public int Deneme { get; set; }
     }
 }

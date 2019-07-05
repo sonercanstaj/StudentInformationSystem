@@ -1,6 +1,7 @@
 ﻿using StudentInformationSystem.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,20 +18,16 @@ namespace StudentInformationSystem
         {
             try
             {
-                using (var con = new Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;"))
+                using (var con = new Context())
                 {
-                    //Eklemek
-                    //
                     if (!con.Database.Exists())
-                        con.Database.Create();
-                    ////    STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
-                    ////    sTUDENT.NAME = "can";
-                    ////    sTUDENT.SURNAME = "Soner";
-                    ////    sTUDENT.PASSWORD = "asdasd";
-
-                    ////    con.STUDENTS.Add(sTUDENT);
-                    ////    con.SaveChanges();
-                    ////}
+                       con.Database.Create();
+                    
+                    else
+                    {
+                        DbMigrator migrator = new DbMigrator(new StudentInformationSystem.Model.Migrations.Configuration());
+                        migrator.Update();
+                    }
 
                 }
             }
@@ -39,8 +36,8 @@ namespace StudentInformationSystem
                 MessageBox.Show(ex.Message.ToString());
             }
                 Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ADMINSTRATOR_SCREEN());
+             Application.SetCompatibleTextRenderingDefault(false);
+             Application.Run(new ADMINSTRATOR_SCREEN());
         }
     }
 }

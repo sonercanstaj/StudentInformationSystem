@@ -11,7 +11,7 @@ namespace StudentInformationSystem.Model
         [key]
         public Int32 Id { get; set; }
 
-        public string PASSWORS { get; set; }
+        public string PASSWORD { get; set; }
 
         public string PERSONEL_NAME { get; set; }
 
