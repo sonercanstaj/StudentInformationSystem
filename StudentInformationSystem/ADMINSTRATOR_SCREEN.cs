@@ -48,7 +48,7 @@ namespace StudentInformationSystem
                     }
                     catch (Exception EX)
                     {
-                        MessageBox.Show("Kullanıcı adınızı kontrol ediniz");
+                        MessageBox.Show("Lütfen kullanıcı adınızı kontrol ediniz!");
                     }
                 }
                 else
@@ -98,6 +98,11 @@ namespace StudentInformationSystem
                 }
 
         private void ADMINSTRATOR_SCREEN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Kullanici_Adi_Txt_TextChanged(object sender, EventArgs e)
         {
 
         }

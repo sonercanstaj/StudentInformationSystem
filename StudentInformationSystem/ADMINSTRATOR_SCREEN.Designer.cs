@@ -84,6 +84,7 @@
             this.Kullanici_Adi_Txt.Name = "Kullanici_Adi_Txt";
             this.Kullanici_Adi_Txt.Size = new System.Drawing.Size(221, 26);
             this.Kullanici_Adi_Txt.TabIndex = 0;
+            this.Kullanici_Adi_Txt.TextChanged += new System.EventHandler(this.Kullanici_Adi_Txt_TextChanged);
             // 
             // PASSWORD_TXT
             // 

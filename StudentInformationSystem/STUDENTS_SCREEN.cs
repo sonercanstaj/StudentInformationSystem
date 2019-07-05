@@ -35,8 +35,6 @@ namespace StudentInformationSystem
                         lbSurname.Text = QUERY.SURNAME;
                         Label_Start_Date.Text = QUERY.START_DATE;
 
-
-
                     }
                     break;
                 case 1://mortar

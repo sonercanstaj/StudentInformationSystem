@@ -19,9 +19,6 @@ namespace StudentInformationSystem.Model
         public ACADEMİC_SCHEDULE ACADEMİC_SCHEDULE{ get; set; }
 
         public ACADEMİC_PERSONAL ACADEMİC_PERSONAL{ get; set; }
-
-
-
-
+        public string PASSWORS { get; set; }
     }
 }

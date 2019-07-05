@@ -1,4 +1,6 @@
-﻿namespace StudentInformationSystem
+﻿using System;
+
+namespace StudentInformationSystem
 {
     partial class GİRİS_FORM
     {
@@ -118,6 +120,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void GİRİS_FORM_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
