@@ -21,13 +21,18 @@ namespace StudentInformationSystem
                 using (var con = new Context())
                 {
                     if (!con.Database.Exists())
-                       con.Database.Create();
-                    
-                    else
-                    {
-                        DbMigrator migrator = new DbMigrator(new StudentInformationSystem.Model.Migrations.Configuration());
-                        migrator.Update();
-                    }
+                        con.Database.Create();
+                    STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
+                   sTUDENT.NAME = "can";
+                    sTUDENT.SURNAME = "Soner";
+                  sTUDENT.PASSWORD = "asdasd";
+
+                      con.STUDENTS.Add(sTUDENT);
+                    con.SaveChanges();
+
+
+                } }
+
 
                 }
             }
@@ -35,9 +40,9 @@ namespace StudentInformationSystem
             {
                 MessageBox.Show(ex.Message.ToString());
             }
-                Application.EnableVisualStyles();
-             Application.SetCompatibleTextRenderingDefault(false);
-             Application.Run(new ADMINSTRATOR_SCREEN());
+    
+         
+    
         }
     }
 }
