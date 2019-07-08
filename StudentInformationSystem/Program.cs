@@ -15,34 +15,32 @@ namespace StudentInformationSystem
         /// </summary>
         [STAThread]
         static void Main()
+           
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new ADMINSTRATOR_SCREEN());
             try
             {
                 using (var con = new Context())
                 {
                     if (!con.Database.Exists())
                         con.Database.Create();
-                    STUDENT sTUDENT = con.STUDENTS.Where(x => x.Id == 1).FirstOrDefault();
-                   sTUDENT.NAME = "can";
-                    sTUDENT.SURNAME = "Soner";
-                  sTUDENT.PASSWORD = "asdasd";
-
-                      con.STUDENTS.Add(sTUDENT);
                     con.SaveChanges();
 
 
-                } }
-
-
                 }
+
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
-    
-         
-    
         }
     }
 }
+
+
+
+

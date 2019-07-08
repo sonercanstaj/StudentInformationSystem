@@ -40,7 +40,7 @@ namespace StudentInformationSystem
                     {
                         int id = ADMINSTRATOR_SCREEN.id;
                         var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-                        MORTAR ac = con.MORTARS.Where(x => x.Id == id).SingleOrDefault();
+                        MORTAR ac = con.MORTARS.Where(x => x.STUDENT.Id == id).FirstOrDefault();
                         Lbl_Pay_Date.Text = ac.PAY_DATE;
                         Lbl_total.Text = ac.TOTAL;
                     }
