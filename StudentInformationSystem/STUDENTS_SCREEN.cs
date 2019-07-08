@@ -40,7 +40,7 @@ namespace StudentInformationSystem
                     {
                         int id = ADMINSTRATOR_SCREEN.id;
                         var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-                        MORTAR ac = con.MORTARS.Where(x => x.STUDENT.Id == id).FirstOrDefault();
+                        MORTAR ac = con.MORTARS.Where(x => x.Id == id).SingleOrDefault();
                         Lbl_Pay_Date.Text = ac.PAY_DATE;
                         Lbl_total.Text = ac.TOTAL;
                     }
@@ -51,7 +51,8 @@ namespace StudentInformationSystem
                         var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
                         
                         //  var cek = con.SCHOOL_CLUB_STUDENTS.Where(x=>x.NAME==)
-                        var ComboItems  =con.SCHOOL_CLUBS.Select(x => new  CBItem { value = x.Id,text =  x.NAME }).ToList();
+                        var ComboItems  =con.SCHOOL_CLUBS.Select(x => new 
+                        CBItem { value = x.Id,text =  x.NAME }).ToList();
 
                         comboBox1.DataSource = ComboItems;
 

@@ -20,5 +20,6 @@ namespace StudentInformationSystem.Model
         public string CLASS { get; set; }
 
 
+        public int Deneme { get; set; }
     }
 }
