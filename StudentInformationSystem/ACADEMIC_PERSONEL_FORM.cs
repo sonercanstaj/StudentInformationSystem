@@ -27,7 +27,7 @@ namespace StudentInformationSystem
             lbl_ad.Text = cek.PERSONEL_NAME;
             lbl_Soyad.Text = cek.PERSONEL_SURNAME;
             lbl_bastar.Text = cek.START_DATE;
-
+            //g
            
         }
 
