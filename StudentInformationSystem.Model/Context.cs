@@ -9,8 +9,8 @@ namespace StudentInformationSystem.Model
 {
     public class Context : DbContext
     {
-        public DbSet<STUDENT> STUDENTS { get; set; }
-
+        public DbSet <STUDENT> STUDENTS { get; set; }
+            
         public DbSet<LESSON> LESSONS { get; set; }
 
         public DbSet<EXAM> EXAMS { get; set; }
