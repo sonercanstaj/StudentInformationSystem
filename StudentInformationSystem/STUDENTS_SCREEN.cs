@@ -25,7 +25,7 @@ namespace StudentInformationSystem
             Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
             lbName.Text = QUERY.NAME;
             lbSurname.Text = QUERY.SURNAME;
-            Label_Start_Date.Text = QUERY.START_DATE;
+            Label_Start_Date.Text = QUERY.START_DATE;//h
         }
         private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
