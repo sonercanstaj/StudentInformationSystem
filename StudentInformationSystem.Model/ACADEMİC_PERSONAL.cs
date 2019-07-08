@@ -20,5 +20,6 @@ namespace StudentInformationSystem.Model
         public string START_DATE { get; set; }
 
         public string PENSİON_DATE { get; set; }
+
     }
 }

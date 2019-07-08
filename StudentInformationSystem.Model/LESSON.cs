@@ -11,7 +11,8 @@ namespace StudentInformationSystem.Model
     {
         [Key]
         public Int32 Id { get; set; }
-        public int PERSONEL_ID { get; set; }    
+
+        public ACADEMİC_PERSONAL PERSONAL { get; set; }    
 
         public string LESSON_NAME { get; set; }
 
@@ -19,7 +20,7 @@ namespace StudentInformationSystem.Model
 
         public string CLASS { get; set; }
 
+        public int PERSONAL_ID { get; set; }
 
-        public int Deneme { get; set; }
     }
 }

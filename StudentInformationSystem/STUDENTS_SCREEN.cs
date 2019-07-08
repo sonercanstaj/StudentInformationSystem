@@ -19,28 +19,29 @@ namespace StudentInformationSystem
         }
         private void STUDENTS_SCREEN_Load(object sender, EventArgs e)
         {
-            int id = ADMINSTRATOR_SCREEN.id;
-            var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
 
-            Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
-            lbName.Text = QUERY.NAME;
-            lbSurname.Text = QUERY.SURNAME;
-            Label_Start_Date.Text = QUERY.START_DATE;//h
         }
         private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             switch (TabControl1.SelectedIndex)
             {
                 case 0://identity informations
-                    {                 
+                    {
+                        int id = ADMINSTRATOR_SCREEN.id;
+                        var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
 
-                  }
+                        Model.STUDENT QUERY = con.STUDENTS.Where(x => x.Id == id).SingleOrDefault();
+                        lbName.Text = QUERY.NAME;
+                        lbSurname.Text = QUERY.SURNAME;
+                        Label_Start_Date.Text = QUERY.START_DATE;
+
+                    }
                     break;
                 case 1://mortar
                     {
                         int id = ADMINSTRATOR_SCREEN.id;
                         var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-                        MORTAR ac = con.MORTARS.Where(x => x.STUDENT.Id == id).FirstOrDefault();
+                        MORTAR ac = con.MORTARS.Where(x => x.Id == id).SingleOrDefault();
                         Lbl_Pay_Date.Text = ac.PAY_DATE;
                         Lbl_total.Text = ac.TOTAL;
                     }
@@ -49,18 +50,8 @@ namespace StudentInformationSystem
                 case 2://school clubs
                     {
                         var con = new Model.Context("Server=.;Database=STUDENT_INFORMATION_SYSTEM;Trusted_Connection=True;");
-                        
-                        //  var cek = con.SCHOOL_CLUB_STUDENTS.Where(x=>x.NAME==)
-                        var ComboItems  =con.SCHOOL_CLUBS.Select(x => new 
-                        CBItem { value = x.Id,text =  x.NAME }).ToList();
-
-                        comboBox1.DataSource = ComboItems;
-
-                        //var a = con.SCHOOL_CLUBS.ToList();
-
-
-
-
+                        var cek = con.SCHOOL_CLUB_STUDENTS.Select(x=> x.NAME).ToList();
+                        dataGridView1.DataSource = cek;
                     }
                     break;
                 case 3://academic schedule
@@ -85,13 +76,6 @@ namespace StudentInformationSystem
                     break;
             }
 
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string value = comboBox1.SelectedValue.ToString();
-            string text = comboBox1.SelectedText;
-            MessageBox.Show(value + " " + text);
         }
     }
 }
